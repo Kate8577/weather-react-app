@@ -1,0 +1,14 @@
+.Forecast h2 {
+  font-size: 16px;
+  color: #62760c;
+  font-weight: bolder;
+}
+.Forecast img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.future-temperature {
+  font-size: 12px;
+}

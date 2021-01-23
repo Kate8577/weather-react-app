@@ -1,0 +1,16 @@
+.temperature h2 {
+  font-size: 30px;
+  color: #62760c;
+  font-weight: bolder;
+  line-height: 1;
+}
+.temperature span {
+  position: relative;
+  font-size: 18px;
+  top: -10px;
+  color: #62760c;
+}
+.temperature a {
+  text-decoration: none;
+  color: #62760c;
+}
