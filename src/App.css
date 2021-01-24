@@ -12,5 +12,8 @@
   padding: 10px;
 }
 .weather-app {
-  background-image: 'url("/images/illustration.svg")';
+  background-image: url("images/illustration.svg");
+  background-repeat: no-repeat;
+  max-width: 500px;
+  height: 500px;
 }
