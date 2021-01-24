@@ -19,7 +19,7 @@ function App() {
       <City />
       <Date />
       <Icon />
-      <Weather city="San Diego" />
+      <Weather/>
       <Description/>
       </div>
       <div className="forecast-app">
