@@ -1,7 +1,8 @@
 import React from "react";
+import "./Footer.css"
 export default function Footer() {
   return (
- <div className="footer">
+ <div className="footer" >
         <small> <a href="https://github.com/Kate8577/weather-react-app">Open-source code</a> by Kate Pidgorna</small>
            
  </div>
