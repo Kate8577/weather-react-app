@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import Search from "./Search";
 import City from "./City";
 import Date from "./Date";

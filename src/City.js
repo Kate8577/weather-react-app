@@ -7,6 +7,5 @@ export default function City() {
           <h1>San Diego</h1>      
 </div>
 
-   
   );
 }

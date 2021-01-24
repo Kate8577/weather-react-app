@@ -2,12 +2,12 @@ import React from "react";
 import "./Forecast.css";
 export default function Forecast() {
   return (
-    <div className="Forecast">
-      <div className="row">
-        <div className="col-3">
+    <div className= "Forecast" >
+      <div className= "row" >
+        <div className= "col-3" >
           <h2>13:00</h2>
           <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />
-          <div className="future-temperature">
+          <div className= "future-temperature" >
             <strong>63°F</strong> | 63°F
           </div>
         </div>
