@@ -3,9 +3,8 @@ import "./Weather.css";
 
 export default function Weather() {
     return(
-         <div className="temperature">
-            <h2>18</h2>
-            <span>°F |°C</span>  
+         <div className="weather">
+            <strong>18</strong><span>°F |°C</span>  
          </div>
     
   );

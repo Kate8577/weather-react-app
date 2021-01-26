@@ -1,16 +1,16 @@
-.temperature h2 {
-  font-size: 30px;
+.weather strong {
+  font-size: 32px;
   color: #62760c;
   font-weight: bolder;
   line-height: 1;
 }
-.temperature span {
+.weather span {
   position: relative;
   font-size: 18px;
   top: -10px;
   color: #62760c;
 }
-.temperature a {
+.weather a {
   text-decoration: none;
   color: #62760c;
 }
