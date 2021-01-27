@@ -43,7 +43,7 @@ export default function Weather(props) {
       let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
       axios.get(apiUrl).then(handleResponse);
       return (<Loader
-         type="ThreeDots"
+         type="TailSpin"
          color="#ff6584"
          height={50}
          width={50}
