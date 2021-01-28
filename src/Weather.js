@@ -15,6 +15,7 @@ export default function Weather(props) {
          date:new Date(response.data.dt*1000),
          temperature: response.data.main.temp,
          description: response.data.weather[0].description,
+         humidity: response.data.main.humidity,
          iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
          
       });
@@ -37,6 +38,7 @@ export default function Weather(props) {
             <strong>{Math.round(weatherData.temperature)}</strong><span>°F |°C</span>
           <div className="description">
                <h2>{weatherData.description}</h2>
+               <h3>Humidity: {weatherData.humidity} %</h3>
             </div>
           </div>
       );
