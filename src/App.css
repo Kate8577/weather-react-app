@@ -15,7 +15,7 @@
 .weather-app {
   background-image: url("images/illustration.svg");
   background-repeat: no-repeat;
-  background-position: left 40px;
+  background-position: left bottom;
   max-width: 500px;
   height: 540px;
 }
