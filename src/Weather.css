@@ -18,7 +18,7 @@
   font-size: 20px;
   color: #62760c;
   font-weight: bolder;
-  margin-top: 120px;
+  margin-top: 100px;
   text-transform: capitalize;
 }
 .description h3 {
@@ -33,7 +33,7 @@
 }
 .date h2 {
   color: #2f2e42;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 .city h1 {
@@ -41,4 +41,11 @@
   font-size: 36px;
   color: #f50457;
   text-transform: uppercase;
+}
+.Search form {
+  margin-top: 2px;
+}
+.btn-primary {
+  background-color: #ff6584;
+  border: none;
 }

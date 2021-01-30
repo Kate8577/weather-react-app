@@ -2,12 +2,13 @@ import React, {useState} from "react";
 import axios from "axios";
 import "./Weather.css";
 import Loader from "react-loader-spinner";
-import FormattedDate from "./FormattedDate.js"
- 
+import WeatherData from "./WeatherData.js"
 
 export default function Weather(props) {
    
    const [weatherData, setWeatherData] = useState({ready:false});
+   const [city, setCity] = useState(props.defaultCity);
+
    function handleResponse(response) {
       setWeatherData({
          ready:true,
@@ -22,30 +23,57 @@ export default function Weather(props) {
         
    }
 
+   function search() {
+      const apiKey = "72a6f55e4b65680441a701dfe7a8721f";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+      axios.get(apiUrl).then(handleResponse);
+      
+   }
+
+   function handleRequest(event) {
+      event.preventDefault();
+      search();
+   }
+
+   function updateCity(event) {
+      setCity(event.target.value);
+      
+   }
+
    if (weatherData.ready) {
       return (
          <div className="weather">
-            <div className="city">
-               <h1>{weatherData.city}</h1>
+          <div className="Search">
+      <form className="mb-3" onSubmit={handleRequest}>
+        <div className="row">
+          <div className="col-9">
+            <div className="form-group">
+              <input
+                              type="search"
+                              className="form-control"
+                              placeholder="Enter a city..."
+                              autoComplete="off"
+                              onChange={updateCity}
+              />
             </div>
-             <div className="date">
-               <h2><FormattedDate date={weatherData.date}/></h2>
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              className="btn btn-primary w-100"
+              value="Search"
+            />
+          </div>
+        </div>
+      </form>
             </div>
-            <div className= "icon">
-               <img src={weatherData.iconUrl}
-                  alt={weatherData.desctiption} />
-            </div>
-            <strong>{Math.round(weatherData.temperature)}</strong><span>°F |°C</span>
-          <div className="description">
-               <h2>{weatherData.description}</h2>
-               <h3>Humidity: {weatherData.humidity} %</h3>
-            </div>
+            <div className="weatherData">
+               <WeatherData  data= {weatherData} />
+            </div> 
           </div>
       );
    } else {
-      const apiKey = "72a6f55e4b65680441a701dfe7a8721f";
-      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
-      axios.get(apiUrl).then(handleResponse);
+      search();
       return (<Loader
          type="TailSpin"
          color="#ff6584"
