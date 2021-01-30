@@ -17,7 +17,7 @@ export default function Weather(props) {
          temperature: response.data.main.temp,
          description: response.data.weather[0].description,
          humidity: response.data.main.humidity,
-         iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+         icon: response.data.weather[0].icon,
          
       });
         
