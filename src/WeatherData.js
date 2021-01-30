@@ -1,11 +1,11 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
-
+import WeatherTemperature from "./WeatherTemperature.js";
 
 export default function WeatherData(props) {
     return (
         <div>
-<div className="city">
+            <div className="city">
                <h1>{props.data.city}</h1>
             </div>
              <div className="date">
@@ -15,7 +15,7 @@ export default function WeatherData(props) {
                <img src={props.data.iconUrl}
                   alt={props.data.desctiption} />
             </div>
-            <strong>{Math.round(props.data.temperature)}</strong><span>°F |°C</span>
+            <WeatherTemperature fahrenheit={props.data.temperature} />
           <div className="description">
                <h2>{props.data.description}</h2>
                <h3>Humidity: {props.data.humidity} %</h3>
