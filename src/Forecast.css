@@ -4,13 +4,13 @@
   font-weight: bolder;
   text-align: center;
 }
-.Forecast img {
+.Forecast svg {
   width: 30px;
   height: 30px;
   margin: 0 0 5px 20px;
 }
 
-.future-temperature {
+.future-temperature strong {
   font-size: 12px;
   text-align: center;
 }

@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import axios from "axios";
 import "./Weather.css";
 import Loader from "react-loader-spinner";
-import WeatherData from "./WeatherData.js"
+import WeatherData from "./WeatherData.js";
+import Forecast from "./Forecast"
 
 export default function Weather(props) {
    
@@ -70,7 +71,10 @@ export default function Weather(props) {
             <div className="weatherData">
                <WeatherData  data= {weatherData} />
             </div> 
-          </div>
+             <div className="forecast-app">
+               <Forecast city={weatherData.city}/>
+         </div>
+         </div>
       );
    } else {
       search();

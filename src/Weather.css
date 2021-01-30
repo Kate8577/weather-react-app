@@ -18,7 +18,7 @@
   font-size: 20px;
   color: #62760c;
   font-weight: bolder;
-  margin-top: 115px;
+  margin-top: 100px;
   text-transform: capitalize;
 }
 .description h3 {
@@ -51,4 +51,11 @@
 .btn:hover {
   background-color: #ff6584;
   color: white;
+}
+.forecast-app {
+  background-color: #f2f2f1;
+  max-width: 450px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
 }
