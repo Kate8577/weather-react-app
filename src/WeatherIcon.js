@@ -65,7 +65,7 @@ export default function WeatherIcon(props) {
         return (
             <WiDayRain
                 size={120}
-                color='#fdb827' />
+                color='#63686e' />
         );
             } else if (props.code === "10d") {
         return (
