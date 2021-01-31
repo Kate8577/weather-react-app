@@ -5,12 +5,14 @@
   text-align: center;
 }
 .Forecast svg {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin: 0 0 5px 20px;
 }
 
-.future-temperature strong {
-  font-size: 12px;
+.Forecast h3 {
+  font-size: 18px;
   text-align: center;
+  color: #62760c;
+  font-weight: bolder;
 }

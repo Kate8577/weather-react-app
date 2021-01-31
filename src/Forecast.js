@@ -21,28 +21,28 @@ export default function Forecast(props) {
             <h2>{new Date(forecast.list[0].dt * 1000).getHours()}:00</h2>
             <WeatherIcon code={forecast.list[0].weather[0].icon}/>
             <div className="future-temperature" >
-              <strong>{Math.round(forecast.list[0].main.temp_max)}°F  | {Math.round(forecast.list[0].main.temp_min)}°F</strong>
+              <h3>{Math.round(forecast.list[0].main.temp_max)}°F</h3>
             </div>
           </div>
           <div className="col-3">
              <h2>{new Date(forecast.list[1].dt * 1000).getHours()}:00</h2>
             <WeatherIcon code={forecast.list[1].weather[0].icon}/>
             <div className="future-temperature">
-              <strong>{Math.round(forecast.list[1].main.temp_max)}°F | {Math.round(forecast.list[1].main.temp_min)}°F </strong>
+              <h3>{Math.round(forecast.list[1].main.temp_max)}°F </h3>
             </div>
           </div>
           <div className="col-3">
              <h2>{new Date(forecast.list[2].dt * 1000).getHours()}:00</h2>
              <WeatherIcon code={forecast.list[2].weather[0].icon}/>
             <div className="future-temperature" >
-              <strong>{Math.round(forecast.list[2].main.temp)}°F | {Math.round(forecast.list[2].main.temp_min)}°F </strong>
+              <h3>{Math.round(forecast.list[2].main.temp)}°F </h3>
             </div>
           </div>
           <div className="col-3">
            <h2>{new Date(forecast.list[3].dt * 1000).getHours()}:00</h2>
              <WeatherIcon code={forecast.list[3].weather[0].icon}/>
             <div className="future-temperature" >
-              <strong>{Math.round(forecast.list[3].main.temp)}°F | {Math.round(forecast.list[3].main.temp_min)}°F</strong>
+              <h3>{Math.round(forecast.list[3].main.temp)}°F </h3>
             </div>
           </div>
         </div>
