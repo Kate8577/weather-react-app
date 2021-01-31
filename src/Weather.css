@@ -1,12 +1,12 @@
 .weather strong {
-  font-size: 36px;
+  font-size: 34px;
   color: #62760c;
   font-weight: bolder;
   line-height: 1;
 }
 .weather span {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   top: -12px;
   color: #62760c;
 }
