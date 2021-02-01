@@ -61,30 +61,20 @@ export default function WeatherIcon(props) {
                 size={120}
                 color='#63686e' />
         );
-    } else if (props.code === "09d") {
+    } else if (props.code === "09d" || props.code==="10d") {
         return (
             <WiDayRain
                 size={120}
                 color='#63686e' />
         );
-            } else if (props.code === "10d") {
-        return (
-            <WiDayRain
-                size={120}
-                color='#fdb827' />
-        );
-    } else if (props.code === "09n") {
+           
+    } else if (props.code === "09n" || props.code === "10n") {
         return (
             <WiNightAltRain
                 size={120}
                 color='#63686e' />
         );
-  } else if (props.code === "10n") {
-        return (
-            <WiNightAltRain
-                size={120}
-                color='#63686e' />
-        );
+  
     } else if (props.code === "13n") {
         return (
             <WiNightAltSnowWind
@@ -99,18 +89,13 @@ export default function WeatherIcon(props) {
                 color='#63686e' />
         );
     
-    } else if (props.code === "11d") {
+    } else if (props.code === "11d" || props.code==="11n") {
         return (
               <WiThunderstorm
                 size={120}
                 color='#63686e' />
         );
-        } else if (props.code === "11n") {
-        return (
-              <WiThunderstorm
-                size={120}
-                color='#63686e' />
-        );
+        
     } else {
         return (
             <WiFog
